@@ -17,11 +17,3 @@ namespace RPS
 
     }
 }
-/*To-do:
- * -write more comments
- * -git this on github
- * -add to andrewwobeck.com
- * 
- * 
- * 
- */

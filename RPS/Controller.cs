@@ -39,45 +39,26 @@ namespace RPS
             switch (uRPS)
             {
                 case 1:
-                    if (oRPS == 2)
+                    return oRPS switch
                     {
-                        return 0;
-                    }
-                    else if (oRPS == 3)
-                    {
-                        return 1;
-                    }
-                    else
-                    {
-                        return 2;
-                    }
+                        2 => 0,
+                        3 => 1,
+                        _ => 2
+                    };
                 case 2:
-                    if (oRPS == 1)
+                    return oRPS switch
                     {
-                        return 0;
-                    }
-                    else if (oRPS == 3)
-                    {
-                        return 1;
-                    }
-                    else
-                    {
-                        return 2;
-                    }
-
+                        1 => 0,
+                        3 => 1,
+                        _ => 2
+                    };
                 case 3:
-                    if (oRPS == 1)
+                    return oRPS switch
                     {
-                        return 0;
-                    }
-                    else if (oRPS == 2)
-                    {
-                        return 1;
-                    }
-                    else
-                    {
-                        return 2;
-                    }
+                        1 => 0,
+                        2 => 1,
+                        _ => 2
+                    };
                 default:
                     throw new Exception();
             }
